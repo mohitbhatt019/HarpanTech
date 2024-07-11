@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "ReportsServiceApp": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7072"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 30013,
+      "useSSL": false
+    }
+  }
+}
