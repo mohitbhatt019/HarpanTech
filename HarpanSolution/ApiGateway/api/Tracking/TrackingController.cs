@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using ApiGateway.api.Tracking.Helper;
+using ApiGateway.api.Tracking.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiGateway.api.Tracking
@@ -7,5 +8,23 @@ namespace ApiGateway.api.Tracking
     [ApiController]
     public class TrackingController : ControllerBase
     {
+
+
+
+        [HttpPost]
+        [Route("Tracking")]
+        public async Task<IActionResult> Tracking(TrackingService trackingRequest)
+        {
+            TrackingHelper trackingHelper = new TrackingHelper();
+
+            var response = await trackingHelper.TrackingServiceHelper(trackingRequest);
+
+            if (response != null)
+                return Ok(response);
+
+            return BadRequest(response);
+        }
     }
+
 }
+
