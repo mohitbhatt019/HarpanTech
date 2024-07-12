@@ -31,7 +31,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportsServiceLogic", "Repo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataContracts", "datacontracts\DataContracts.csproj", "{10CD9945-1ADC-4711-A1FC-EEA471651A62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{606982EE-D747-4FC4-B57D-8E55F69AF1EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{FBE7C485-BDCE-4F1A-A723-FDED5128BFE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,10 +71,10 @@ Global
 		{10CD9945-1ADC-4711-A1FC-EEA471651A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10CD9945-1ADC-4711-A1FC-EEA471651A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10CD9945-1ADC-4711-A1FC-EEA471651A62}.Release|Any CPU.Build.0 = Release|Any CPU
-		{606982EE-D747-4FC4-B57D-8E55F69AF1EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{606982EE-D747-4FC4-B57D-8E55F69AF1EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{606982EE-D747-4FC4-B57D-8E55F69AF1EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{606982EE-D747-4FC4-B57D-8E55F69AF1EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBE7C485-BDCE-4F1A-A723-FDED5128BFE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBE7C485-BDCE-4F1A-A723-FDED5128BFE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBE7C485-BDCE-4F1A-A723-FDED5128BFE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBE7C485-BDCE-4F1A-A723-FDED5128BFE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
