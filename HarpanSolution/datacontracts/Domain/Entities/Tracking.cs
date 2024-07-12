@@ -1,6 +1,6 @@
-﻿namespace ApiGateway.api.Tracking.Model
+﻿namespace DataContracts.Domain.Entities
 {
-    public class TrackingService
+    public class Tracking
     {
         public int Id { get; set; }
         public string? Name { get; set; }
@@ -8,4 +8,3 @@
         public DateTime DateTime { get; set; }
     }
 }
-

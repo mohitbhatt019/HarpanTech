@@ -5,31 +5,33 @@ VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthServer", "AuthServer\dotnet-8-jwt-refresh-auth-api\AuthServer.csproj", "{8497A2A4-D4D5-4D5F-9CB5-4CF015722402}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{C4A4074A-B8C9-4325-8588-8D3590A693BB}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InternalApi", "InternalApi", "{F81741BB-1FC4-4D95-A25B-1F3156A975CC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Endpoints", "Endpoints", "{2DFE388F-D887-4BFA-B7E6-B42EA624CA73}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TrackingService", "TrackingService", "{1F279103-0441-4A1C-98D4-06B508D2A32E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackingServiceApp", "TrackingServiceApp\TrackingServiceApp.csproj", "{E472EA6E-4FF8-4548-8928-63C6D57E830A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackingServiceApp", "TrackingServiceApp\TrackingServiceApp.csproj", "{E472EA6E-4FF8-4548-8928-63C6D57E830A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReportsService", "ReportsService", "{C38BBA88-0188-4AF4-B050-9C31744CCA3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportsServiceApp", "ReportsServiceApp\ReportsServiceApp.csproj", "{F8131A0E-0283-41BD-99B0-D09FC4B831BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportsServiceApp", "ReportsServiceApp\ReportsServiceApp.csproj", "{F8131A0E-0283-41BD-99B0-D09FC4B831BB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReportsWorkerService", "ReportsWorkerService", "{97AD30C9-3ABC-48A7-B27E-C0321A70B762}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportsWorkerServiceApp", "ReportsWorkerServiceApp\ReportsWorkerServiceApp.csproj", "{14B33409-BA0D-465B-A65B-C89F64C27DDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportsWorkerServiceApp", "ReportsWorkerServiceApp\ReportsWorkerServiceApp.csproj", "{14B33409-BA0D-465B-A65B-C89F64C27DDF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataGateway", "DataGateway", "{029B1EA7-E6C3-4544-82F1-4B40E60EC89C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackingLogic", "TrackingLogic\TrackingLogic.csproj", "{08F37DEF-D00C-4309-8A36-653AD39E7B6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackingLogic", "TrackingLogic\TrackingLogic.csproj", "{08F37DEF-D00C-4309-8A36-653AD39E7B6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportsWorkerLogic", "ReportsWorkerLogic\ReportsWorkerLogic.csproj", "{A6EC0F7F-8A1D-441F-9D30-36DA4FF3753F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportsWorkerLogic", "ReportsWorkerLogic\ReportsWorkerLogic.csproj", "{A6EC0F7F-8A1D-441F-9D30-36DA4FF3753F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportsServiceLogic", "ReportsServiceLogic\ReportsServiceLogic.csproj", "{D2873732-E66A-474F-BC64-7597D716C118}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportsServiceLogic", "ReportsServiceLogic\ReportsServiceLogic.csproj", "{D2873732-E66A-474F-BC64-7597D716C118}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataContracts", "datacontracts\DataContracts.csproj", "{10CD9945-1ADC-4711-A1FC-EEA471651A62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{606982EE-D747-4FC4-B57D-8E55F69AF1EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +43,6 @@ Global
 		{8497A2A4-D4D5-4D5F-9CB5-4CF015722402}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8497A2A4-D4D5-4D5F-9CB5-4CF015722402}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8497A2A4-D4D5-4D5F-9CB5-4CF015722402}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C4A4074A-B8C9-4325-8588-8D3590A693BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4A4074A-B8C9-4325-8588-8D3590A693BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4A4074A-B8C9-4325-8588-8D3590A693BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4A4074A-B8C9-4325-8588-8D3590A693BB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E472EA6E-4FF8-4548-8928-63C6D57E830A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E472EA6E-4FF8-4548-8928-63C6D57E830A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E472EA6E-4FF8-4548-8928-63C6D57E830A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -69,6 +67,14 @@ Global
 		{D2873732-E66A-474F-BC64-7597D716C118}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2873732-E66A-474F-BC64-7597D716C118}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2873732-E66A-474F-BC64-7597D716C118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10CD9945-1ADC-4711-A1FC-EEA471651A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10CD9945-1ADC-4711-A1FC-EEA471651A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10CD9945-1ADC-4711-A1FC-EEA471651A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10CD9945-1ADC-4711-A1FC-EEA471651A62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{606982EE-D747-4FC4-B57D-8E55F69AF1EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{606982EE-D747-4FC4-B57D-8E55F69AF1EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{606982EE-D747-4FC4-B57D-8E55F69AF1EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{606982EE-D747-4FC4-B57D-8E55F69AF1EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
