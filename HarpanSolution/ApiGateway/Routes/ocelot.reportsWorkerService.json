@@ -1,0 +1,36 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "reportsWorkerService",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7008
+        }
+      ],
+      "UpstreamPathTemplate": "/reportsWorkerService/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+
+      "QoSOptions": {
+        "DurationOfBreak": 50000,
+        "ExceptionsAllowedBeforeBreaking": 10,
+        "TimeoutValue": 200000
+      },
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "Bearer",
+      //  "AllowedScopes": []
+      //},
+      "FileCacheOptions": {
+        "TtlSeconds": 60,
+        "Key": "hello"
+      }
+    }
+  ]
+}

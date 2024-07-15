@@ -1,8 +1,8 @@
-using System.Net;
-using System.Text.Json;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
+using System.Net;
+using System.Text.Json;
 using TrackingLogic.Helpers;
 using TrackingLogic.Models;
 
@@ -20,7 +20,7 @@ namespace TrackingServiceApp
         }
 
         [Function("GetAllTrackings")]
-        public async Task<HttpResponseData> GetAllTrackings([HttpTrigger(AuthorizationLevel.Function, "get")] HttpRequestData req)
+        public async Task<HttpResponseData> GetAllTrackings([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequestData req)
         {
             _logger.LogInformation("Getting all trackings.");
 
@@ -33,7 +33,7 @@ namespace TrackingServiceApp
         }
 
         [Function("GetTrackingById")]
-        public async Task<HttpResponseData> GetTrackingById([HttpTrigger(AuthorizationLevel.Function, "get")] HttpRequestData req, string id)
+        public async Task<HttpResponseData> GetTrackingById([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequestData req, string id)
         {
             _logger.LogInformation($"Getting tracking with ID {id}.");
 
@@ -58,7 +58,7 @@ namespace TrackingServiceApp
         }
 
         [Function("CreateTracking")]
-        public async Task<HttpResponseData> CreateTracking([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req)
+        public async Task<HttpResponseData> CreateTracking([HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequestData req)
         {
             _logger.LogInformation("Creating a new tracking.");
 
@@ -81,7 +81,7 @@ namespace TrackingServiceApp
         }
 
         [Function("UpdateTracking")]
-        public async Task<HttpResponseData> UpdateTracking([HttpTrigger(AuthorizationLevel.Function, "put")] HttpRequestData req)
+        public async Task<HttpResponseData> UpdateTracking([HttpTrigger(AuthorizationLevel.Anonymous, "put")] HttpRequestData req)
         {
             _logger.LogInformation("Updating a tracking.");
 
@@ -104,7 +104,7 @@ namespace TrackingServiceApp
         }
 
         [Function("DeleteTracking")]
-        public async Task<HttpResponseData> DeleteTracking([HttpTrigger(AuthorizationLevel.Function, "delete")] HttpRequestData req, string id)
+        public async Task<HttpResponseData> DeleteTracking([HttpTrigger(AuthorizationLevel.Anonymous, "delete")] HttpRequestData req, string id)
         {
             _logger.LogInformation($"Deleting tracking with ID {id}.");
 

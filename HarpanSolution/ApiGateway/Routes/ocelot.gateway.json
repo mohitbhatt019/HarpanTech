@@ -1,0 +1,36 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "gateway",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5225
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+
+      "QoSOptions": {
+        "DurationOfBreak": 50000,
+        "ExceptionsAllowedBeforeBreaking": 10,
+        "TimeoutValue": 20000
+      },
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "Bearer",
+      //  "AllowedScopes": []
+      //},
+      "FileCacheOptions": {
+        "TtlSeconds": 60,
+        "Key" :  "hello"
+      }
+    }
+  ]
+}
