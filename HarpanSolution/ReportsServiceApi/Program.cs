@@ -1,5 +1,13 @@
-var builder = WebApplication.CreateBuilder(args);
 
+using ReportsServiceApi.DbContext;
+using Microsoft.EntityFrameworkCore;
+var builder = WebApplication.CreateBuilder(args);
+var configServices = builder.Configuration;
+var connectionString = builder.Configuration.GetConnectionString("BaseDBConnection");
+builder.Services.AddDbContext<BaseDBContext>(op =>
+{
+    op.UseSqlServer(connectionString);
+});
 // Add services to the container.
 
 builder.Services.AddControllers();
